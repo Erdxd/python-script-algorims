@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
-	d := []int{1, 2, 3, 4, 5}
-
-	fmt.Println(bin_search(d, 3))
+	d := []int{1, 2, 3, 4, 5, 100, 6}
+	sort.Ints(d)
+	fmt.Println(d)
+	fmt.Println(bin_search(d, 6))
 }
 func bin_search(d []int, number int) int {
 	low := 0
@@ -21,5 +25,5 @@ func bin_search(d []int, number int) int {
 			low = mid + 1
 		}
 	}
-	return 0
+	return -1
 }
