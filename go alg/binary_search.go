@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	d := []int{1, 2, 3, 4, 5}
-	bin_search(d, 3)
+
 	fmt.Println(bin_search(d, 3))
 }
 func bin_search(d []int, number int) int {
