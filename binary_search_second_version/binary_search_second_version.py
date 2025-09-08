@@ -14,4 +14,6 @@ def bin_search(arr,item):
     return None 
 my_list = [1,2,3,100,6,7,8]
 print(my_list)
+my_list.sort()
+print(my_list)
 print(bin_search(my_list,6))
